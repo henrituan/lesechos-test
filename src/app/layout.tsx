@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import { css } from "@panda/css";
 
+import { Navbar } from "./(layout)/_components/Navbar";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,7 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className={css({ bgColor: "bg" })}>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
