@@ -15,3 +15,11 @@
 - The project is available on GitHub here: [https://github.com/henrituan/lesechos-test](https://github.com/henrituan/lesechos-test)
 - The project is deployed here: [https://lesechos-test.henrituan.com/](https://lesechos-test.henrituan.com/)
 - You can click on the user select button on the Navbar to simulate different profiles and see different CTAs for each Card
+
+## Run on local
+
+- Clone the repository
+- `npm install`
+- `npm run prepare`
+- `npm run dev`
+- Open [http://localhost:3000](http://localhost:3000)
