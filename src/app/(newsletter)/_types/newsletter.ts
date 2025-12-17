@@ -7,12 +7,15 @@ export interface APINewsletterItemType {
   subscriptions: string[];
 }
 
+export type UserPermission = "can_register" | "need_subscribe";
+
 export interface NewsletterItemType {
   id: string;
   image: string;
   description: string;
   title: string;
   site: string;
+  userPermission: UserPermission;
 }
 
 export interface NewslettersGroupType {
