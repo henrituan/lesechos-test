@@ -36,7 +36,7 @@ export const UserSelectButton = ({ userId, isActive }: UserSelectButtonProps) =>
     <button className={css({
       rounded: "4xl",
       bg: "bg.neutral",
-      color: "white",
+      color: "text",
       width: "fit-content",
       px: "30px",
       py: "8px",
@@ -49,6 +49,7 @@ export const UserSelectButton = ({ userId, isActive }: UserSelectButtonProps) =>
       },
       ...(isActive && {
         bg: "primary",
+        color: "white",
       })
     })}
       onClick={handleClick}
