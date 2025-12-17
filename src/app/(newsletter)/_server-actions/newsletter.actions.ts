@@ -32,7 +32,7 @@ async function getUserSubscriptionsFromCookies() {
   return [];
 }
 
-function getUserPermission(
+export function getUserPermission(
   articleSubscriptions: string[],
   userSubscriptions: string[]
 ): UserPermission {
