@@ -35,5 +35,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Panda
+styled-system
+styled-system-studio
 
 answer/answer_decoded.txt
