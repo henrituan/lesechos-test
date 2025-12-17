@@ -39,7 +39,6 @@ export const ArticleCard = ({ title, description, image, ctaType }: ArticleCardP
         height: '200px',
       })}>
         <Link
-          href="/"
           style={{ backgroundImage: `url(${image}?random=${Math.random()})` }}
           className={
             css({
@@ -55,6 +54,8 @@ export const ArticleCard = ({ title, description, image, ctaType }: ArticleCardP
               }
             })
           }
+          href="https://www.lesechos.fr/"
+          target="_blank"
         >
         </Link>
         <div className={css({
@@ -90,6 +91,6 @@ export const ArticleCard = ({ title, description, image, ctaType }: ArticleCardP
       </p>
 
       {renderCta()}
-    </div>
+    </div >
   )
 }
