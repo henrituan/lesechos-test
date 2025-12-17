@@ -29,6 +29,11 @@ export default defineConfig({
               value: { base: "#212121", _dark: "white" },
             },
           },
+          primary: {
+            DEFAULT: {
+              value: { base: "#B00005", _dark: "#f76666" },
+            },
+          },
         },
         fontSizes: {
           title: {
