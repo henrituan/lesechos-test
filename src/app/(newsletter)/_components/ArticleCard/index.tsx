@@ -55,6 +55,7 @@ export const ArticleCard = ({ title, description, image, ctaType }: ArticleCardP
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
+          paddingX: '4',
           pointerEvents: "none",
         })}>
           <h3 className={css({
