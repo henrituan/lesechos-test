@@ -1,6 +1,9 @@
 import { css } from "@panda/css"
 import Link from "next/link";
 
+import { LoginCta } from "./LoginCta";
+import { SubscribeCta } from "./SubscibeCta";
+
 type ArticleCardProps = {
   title: string;
   description: string;
@@ -14,10 +17,15 @@ export const ArticleCard = ({ title, description, image, ctaType }: ArticleCardP
       display: 'flex',
       flexDirection: 'column',
       gap: '2',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      paddingBottom: 2,
     })}>
       <div className={css({
         position: 'relative',
         overflow: 'hidden',
+        width: '100%',
+        height: '200px',
       })}>
         <Link
           href="/"
@@ -26,7 +34,7 @@ export const ArticleCard = ({ title, description, image, ctaType }: ArticleCardP
             css({
               display: "block",
               width: "100%",
-              height: "200px",
+              height: "100%",
               bgSize: "cover",
               bgPosition: "center",
               opacity: "1",
@@ -69,7 +77,7 @@ export const ArticleCard = ({ title, description, image, ctaType }: ArticleCardP
         {description}
       </p>
 
-      <button>{ctaType}</button>
+      {ctaType === 'login' ? <LoginCta /> : <SubscribeCta />}
     </div>
   )
 }

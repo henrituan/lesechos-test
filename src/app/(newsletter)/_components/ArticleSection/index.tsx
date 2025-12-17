@@ -15,7 +15,7 @@ export const ArticleSection = ({ newslettersGroup }: ArticleSectionProps) => {
       <SectionTitle title={newslettersGroup.site} />
       <div className={grid({
         width: "100%",
-        gap: "2",
+        gap: "8",
         gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
       })}>
         {newslettersGroup.items.map((item) => (
