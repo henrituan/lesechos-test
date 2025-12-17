@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import { css } from "@panda/css";
 
 import "./globals.css";
 
@@ -15,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="fr" className={css({ bgColor: "bg" })}>
       <body className={inter.className}>{children}</body>
     </html>
   );
