@@ -3,7 +3,7 @@ import { vstack } from "@panda/patterns";
 
 export const PageHeader = () => {
   return (
-    <header className={vstack({ bg: "bg.neutral", padding: "4", rounded: "md" })}>
+    <header className={vstack({ bg: "bg.neutral", padding: "4", rounded: "xl" })}>
       <h1 className={css({ color: "text", fontSize: "title.lg", fontWeight: "bold" })}>
         Newsletters
       </h1>
