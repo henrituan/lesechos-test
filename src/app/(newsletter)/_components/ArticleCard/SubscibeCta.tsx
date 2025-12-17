@@ -18,7 +18,8 @@ export const SubscribeCta = () => {
         filter: "brightness(0.9)",
       },
     })}
-      href="/abonnement"
+      href="https://abonnement.lesechos.fr/"
+      target="_blank"
     >
       S'abonner
     </Link>

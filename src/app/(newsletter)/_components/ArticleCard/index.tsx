@@ -1,17 +1,28 @@
 import { css } from "@panda/css"
 import Link from "next/link";
 
-import { LoginCta } from "./LoginCta";
+import { RegisterCta } from "./RegisterCta";
 import { SubscribeCta } from "./SubscibeCta";
 
 type ArticleCardProps = {
   title: string;
   description: string;
   image: string;
-  ctaType: 'login' | 'subscribe';
+  ctaType: 'register' | 'subscribe';
 };
 
 export const ArticleCard = ({ title, description, image, ctaType }: ArticleCardProps) => {
+  const renderCta = () => {
+    if (ctaType === 'register') {
+      return <RegisterCta />
+    }
+    if (ctaType === 'subscribe') {
+      return <SubscribeCta />
+    }
+
+    return null;
+  }
+
   return (
     <div className={css({
       display: 'flex',
@@ -78,7 +89,7 @@ export const ArticleCard = ({ title, description, image, ctaType }: ArticleCardP
         {description}
       </p>
 
-      {ctaType === 'login' ? <LoginCta /> : <SubscribeCta />}
+      {renderCta()}
     </div>
   )
 }

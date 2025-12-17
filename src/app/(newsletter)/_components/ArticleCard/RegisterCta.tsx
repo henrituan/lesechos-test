@@ -1,9 +1,9 @@
 "use client"
 import { css } from "@panda/css";
 
-export const LoginCta = () => {
+export const RegisterCta = () => {
   const handleClick = () => {
-    window.alert("Login modal");
+    window.alert("Register modal");
   };
 
   return (
