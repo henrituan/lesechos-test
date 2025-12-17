@@ -30,6 +30,21 @@ export default defineConfig({
             },
           },
         },
+        fontSizes: {
+          title: {
+            lg: {
+              value: "30px",
+            },
+            md: {
+              value: "22px",
+            },
+          },
+          text: {
+            md: {
+              value: "16px",
+            },
+          },
+        },
       },
     },
   },
