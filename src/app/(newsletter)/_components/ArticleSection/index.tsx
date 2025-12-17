@@ -19,7 +19,12 @@ export const ArticleSection = ({ newslettersGroup }: ArticleSectionProps) => {
         gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
       })}>
         {newslettersGroup.items.map((item) => (
-          <ArticleCard key={item.id} title={item.title} description={item.description} image={item.image} ctaType={"login"} />
+          <ArticleCard
+            key={item.id}
+            title={item.title}
+            description={item.description}
+            image={item.image}
+            ctaType={item.userPermission === "can_register" ? "register" : "subscribe"} />
         ))}
       </div>
     </section>
