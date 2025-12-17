@@ -21,7 +21,7 @@ export const SubscribeCta = () => {
       href="https://abonnement.lesechos.fr/"
       target="_blank"
     >
-      S'abonner
+      {`S'abonner`}
     </Link>
   );
 };

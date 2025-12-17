@@ -24,7 +24,7 @@ export const RegisterCta = () => {
     })}
       onClick={handleClick}
     >
-      S'inscrire
+      {`S'inscrire`}
     </button>
   );
 };
